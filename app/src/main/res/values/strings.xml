@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EulerityChanllenge</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hello,Anonymous</string>
+    <string name="nav_header_subtitle">This is testing app, so many functions need to improve</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_no_result">No Result</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_myImage">My Image</string>
+    <string name="menu_selection">Select the Image</string>
+    <string name="menu_editor">Edit your Image</string>
+</resources>

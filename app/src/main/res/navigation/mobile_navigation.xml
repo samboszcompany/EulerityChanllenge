@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.euleritychanllenge.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.euleritychanllenge.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.euleritychanllenge.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_myImage"
+        android:name="com.example.euleritychanllenge.ui.myImage.MyImageFragment"
+        android:label="@string/menu_myImage"
+        tools:layout="@layout/fragment_myimage" >
+        <action
+            android:id="@+id/action_nav_myImage_to_nav_selection"
+            app:destination="@id/nav_selection" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_selection"
+        android:name="com.example.euleritychanllenge.ui.selectionpage.SelectionPageFragment"
+        android:label="@string/menu_selection"
+        tools:layout="@layout/fragment_selection" >
+        <action
+            android:id="@+id/action_nav_selection_to_nav_imageeditor"
+            app:destination="@id/nav_imageeditor" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_imageeditor"
+        android:name="com.example.euleritychanllenge.ui.imageEditor.EditorFragment"
+        android:label="@string/menu_editor"
+        tools:layout="@layout/fragment_editor" >
+        <action
+            android:id="@+id/action_nav_imageeditor_to_nav_myImage"
+            app:destination="@id/nav_myImage" />
+    </fragment>
+</navigation>
